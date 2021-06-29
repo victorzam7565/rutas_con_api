@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link, NavLink} from "react-rout
 import Contacto from './components/Contacto';
 import Nosotro from './components/Nosotro';
 import Inicio from './components/Inicio';
+import User from './components/User';
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
       </div>
 <hr/>
 <Switch>
+<Route path="/Nosotro/: id">
+<User/>
+</Route>
+
    <Route path ="/Contacto">
      <Contacto/>
    </Route>
